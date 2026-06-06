@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neena's Jewelry - Full-Service Jewelry Solutions</title>
+  <meta name="description" content="Neena's Jewelry - family-owned, full-service jewelry in Fairview Heights, IL. Custom design, wedding & anniversary rings, vintage & estate jewelry, repair, and gold buying since 2016." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-gem"></div>
+      <div class="loader-text">NEENA'S JEWELRY</div>
+      <div class="loader-bar"><span id="loader-bar-fill"></span></div>
+    </div>
+  </div>
+
+  <div class="bg-3d" aria-hidden="true">
+    <div class="bg-aurora"></div>
+    <div class="bg-sheen"></div>
+  </div>
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <div class="bg-veil"></div>
+  <div class="pointer-light" id="pointerLight" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <header class="nav" id="nav">
+    <a href="#/" class="brand" data-link>
+      <span class="brand-mark">N</span>
+      <span class="brand-name">Neena's Jewelry</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#/" data-link data-route="/">Home</a>
+      <a href="#/about" data-link data-route="/about">About</a>
+      <a href="#/collections" data-link data-route="/collections">Collections</a>
+      <a href="#/services" data-link data-route="/services">Services</a>
+      <a href="#/buy" data-link data-route="/buy">Buy Online</a>
+      <a href="#/contact" data-link data-route="/contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="view"></main>
+
+  <footer class="footer" id="footer">
+    <span>(c) <span id="year"></span> Neena's Jewelry - Full-Service Jewelry Solutions</span>
+    <span>1935 W Hwy 50, Fairview Heights, IL - 618-409-3299</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

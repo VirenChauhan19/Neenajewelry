@@ -1,0 +1,25 @@
+{
+  "name": "neenajewelry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/preview-server.cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VirenChauhan19/Neenajewelry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/VirenChauhan19/Neenajewelry/issues"
+  },
+  "homepage": "https://github.com/VirenChauhan19/Neenajewelry#readme",
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
