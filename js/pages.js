@@ -1,4 +1,4 @@
-const IMG = "assets/img/";
+const IMG = "assets/img/webp/";
 
 export const pages = {
   "/": {
@@ -20,7 +20,7 @@ export const pages = {
             </div>
           </div>
           <div class="hero-figure reveal" data-tilt="7">
-            <img src="${IMG}model-hero.jpg" alt="Model wearing Neena's Jewelry diamond necklace, ring and bracelet" loading="eager" />
+            <img src="${IMG}model-hero.webp" alt="Model wearing Neena's Jewelry diamond necklace, ring and bracelet" loading="eager" />
             <span class="figure-tag">Stop in today for the perfect gift</span>
           </div>
         </div>
@@ -30,19 +30,19 @@ export const pages = {
           <h2 class="center reveal">Pieces worth keeping forever</h2>
           <div class="feature-grid">
             <a class="feature-card reveal" data-tilt="9" href="#/collections" data-link>
-              <img src="${IMG}wedding-bands.jpg" alt="Diamond eternity wedding bands" loading="lazy" />
+              <img src="${IMG}wedding-bands.webp" alt="Diamond eternity wedding bands" loading="lazy" />
               <span>Wedding &amp; Anniversary</span>
             </a>
             <a class="feature-card reveal" data-tilt="9" href="#/collections" data-link>
-              <img src="${IMG}engagement-purple.jpg" alt="Halo engagement ring on silk" loading="lazy" />
+              <img src="${IMG}engagement-purple.webp" alt="Halo engagement ring on silk" loading="lazy" />
               <span>Engagement Rings</span>
             </a>
             <a class="feature-card reveal" data-tilt="9" href="#/collections" data-link>
-              <img src="${IMG}vintage-emerald.jpg" alt="Vintage emerald-cut green gemstone ring" loading="lazy" />
+              <img src="${IMG}vintage-emerald.webp" alt="Vintage emerald-cut green gemstone ring" loading="lazy" />
               <span>Vintage &amp; Estate</span>
             </a>
             <a class="feature-card reveal" data-tilt="9" href="#/services" data-link>
-              <img src="${IMG}gold-bars.jpg" alt="Gold bars and coins" loading="lazy" />
+              <img src="${IMG}gold-bars.webp" alt="Gold bars and coins" loading="lazy" />
               <span>Gold Buying &amp; Selling</span>
             </a>
           </div>
@@ -77,7 +77,7 @@ export const pages = {
             <h2>Learn before you choose.</h2>
             <p>Neena's Jewelry highlights diamond and jewelry education so every customer can understand quality, care, and value before making a decision.</p>
           </div>
-          <img src="${IMG}engagement-hand.jpg" alt="Diamond engagement ring shown close up for jewelry education" loading="lazy" />
+          <img src="${IMG}engagement-hand.webp" alt="Diamond engagement ring shown close up for jewelry education" loading="lazy" />
         </div>
 
         <div class="testimonial-band reveal">
@@ -93,7 +93,7 @@ export const pages = {
     html: `
       <section class="page page--split">
         <div class="split-figure reveal" data-tilt="7">
-          <img src="${IMG}owners.jpg" alt="Owners Neena and Raj at Neena's Jewelry" loading="eager" />
+          <img src="${IMG}owners.webp" alt="Owners Neena and Raj at Neena's Jewelry" loading="eager" />
         </div>
         <div class="split-copy">
           <p class="eyebrow reveal">Our Story</p>
@@ -123,35 +123,35 @@ export const pages = {
 
         <div class="gallery">
           <article class="g-item g-item--tall reveal" data-tilt="8">
-            <img src="${IMG}wedding-bands.jpg" alt="Diamond eternity wedding and anniversary bands" loading="lazy" />
+            <img src="${IMG}wedding-bands.webp" alt="Diamond eternity wedding and anniversary bands" loading="lazy" />
             <div class="g-caption"><h3>Wedding &amp; Anniversary Rings</h3><p>Commitment pieces with lasting sparkle.</p></div>
           </article>
           <article class="g-item reveal" data-tilt="8">
-            <img src="${IMG}engagement-hand.jpg" alt="Engagement ring on hand" loading="lazy" />
+            <img src="${IMG}engagement-hand.webp" alt="Engagement ring on hand" loading="lazy" />
             <div class="g-caption"><h3>Engagement Rings</h3><p>Thoughtful settings for the big yes.</p></div>
           </article>
           <article class="g-item reveal" data-tilt="8">
-            <img src="${IMG}engagement-gold.jpg" alt="Gold solitaire engagement ring" loading="lazy" />
+            <img src="${IMG}engagement-gold.webp" alt="Gold solitaire engagement ring" loading="lazy" />
             <div class="g-caption"><h3>Solitaires</h3><p>Clean, timeless diamond settings.</p></div>
           </article>
           <article class="g-item reveal" data-tilt="8">
-            <img src="${IMG}vintage-twins.jpg" alt="Vintage halo gemstone rings" loading="lazy" />
+            <img src="${IMG}vintage-twins.webp" alt="Vintage halo gemstone rings" loading="lazy" />
             <div class="g-caption"><h3>Vintage &amp; Estate</h3><p>Character-rich pieces with history.</p></div>
           </article>
           <article class="g-item reveal" data-tilt="8">
-            <img src="${IMG}vintage-emerald.jpg" alt="Emerald-cut vintage ring" loading="lazy" />
+            <img src="${IMG}vintage-emerald.webp" alt="Emerald-cut vintage ring" loading="lazy" />
             <div class="g-caption"><h3>Colored Gemstones</h3><p>Emeralds, tourmalines, and standout stones.</p></div>
           </article>
           <article class="g-item g-item--tall reveal" data-tilt="8">
-            <img src="${IMG}necklaces.jpg" alt="Layered personalized necklaces" loading="lazy" />
+            <img src="${IMG}necklaces.webp" alt="Layered personalized necklaces" loading="lazy" />
             <div class="g-caption"><h3>Necklaces, Bracelets &amp; Earrings</h3><p>Everyday elegance and gifts.</p></div>
           </article>
           <article class="g-item reveal" data-tilt="8">
-            <img src="${IMG}custom-hearts.jpg" alt="Custom heart-shaped diamond rings" loading="lazy" />
+            <img src="${IMG}custom-hearts.webp" alt="Custom heart-shaped diamond rings" loading="lazy" />
             <div class="g-caption"><h3>Custom Designs</h3><p>A piece created around your idea.</p></div>
           </article>
           <article class="g-item reveal" data-tilt="8">
-            <img src="${IMG}engagement-purple.jpg" alt="Halo ring on purple silk" loading="lazy" />
+            <img src="${IMG}engagement-purple.webp" alt="Halo ring on purple silk" loading="lazy" />
             <div class="g-caption"><h3>Halo Settings</h3><p>Brilliance framed with detail.</p></div>
           </article>
         </div>
@@ -175,7 +175,7 @@ export const pages = {
 
         <div class="service-rows">
           <article class="service-row reveal">
-            <div class="service-img" data-tilt="7"><img src="${IMG}custom-hearts.jpg" alt="Custom designed rings" loading="lazy" /></div>
+            <div class="service-img" data-tilt="7"><img src="${IMG}custom-hearts.webp" alt="Custom designed rings" loading="lazy" /></div>
             <div class="service-text">
               <h3>Custom Design Jewelry</h3>
               <p>Start with an idea, a sketch, or a stone. Neena and Raj help shape it into a finished piece with the right details, setting, and story.</p>
@@ -183,7 +183,7 @@ export const pages = {
             </div>
           </article>
           <article class="service-row service-row--flip reveal">
-            <div class="service-img" data-tilt="7"><img src="${IMG}vintage-solitaire.jpg" alt="Jewelry repair and restoration" loading="lazy" /></div>
+            <div class="service-img" data-tilt="7"><img src="${IMG}vintage-solitaire.webp" alt="Jewelry repair and restoration" loading="lazy" /></div>
             <div class="service-text">
               <h3>Jewelry Repair</h3>
               <p>Restore treasured pieces with careful work on prongs, sizing, settings, chains, restringing, and stone replacement.</p>
@@ -191,7 +191,7 @@ export const pages = {
             </div>
           </article>
           <article class="service-row reveal">
-            <div class="service-img" data-tilt="7"><img src="${IMG}gold-pile.jpg" alt="Gold jewelry for buying and selling" loading="lazy" /></div>
+            <div class="service-img" data-tilt="7"><img src="${IMG}gold-pile.webp" alt="Gold jewelry for buying and selling" loading="lazy" /></div>
             <div class="service-text">
               <h3>Gold Buying &amp; Selling</h3>
               <p>Get clear, knowledgeable help when selling unused gold or exploring gold pieces with lasting value.</p>
@@ -199,7 +199,7 @@ export const pages = {
             </div>
           </article>
           <article class="service-row service-row--flip reveal">
-            <div class="service-img" data-tilt="7"><img src="${IMG}model-hero.jpg" alt="Jewelry appraisals and cleaning" loading="lazy" /></div>
+            <div class="service-img" data-tilt="7"><img src="${IMG}model-hero.webp" alt="Jewelry appraisals and cleaning" loading="lazy" /></div>
             <div class="service-text">
               <h3>Appraisals &amp; Cleaning</h3>
               <p>Keep your jewelry protected and shining with appraisal support, professional cleaning, and care guidance.</p>
@@ -229,7 +229,7 @@ export const pages = {
           </div>
         </div>
         <div class="buy-figure reveal" data-tilt="7">
-          <img src="${IMG}wedding-bands.jpg" alt="Diamond bands by Neena's Jewelry" loading="lazy" />
+          <img src="${IMG}wedding-bands.webp" alt="Diamond bands by Neena's Jewelry" loading="lazy" />
         </div>
       </section>`,
   },

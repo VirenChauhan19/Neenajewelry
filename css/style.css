@@ -885,3 +885,102 @@ p.lead {
   }
   .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* MacBook/Safari performance mode: keep the luxury look, remove repaint-heavy effects. */
+body {
+  background:
+    radial-gradient(ellipse at 15% 12%, rgba(185,139,128,0.14), transparent 34%),
+    radial-gradient(ellipse at 84% 8%, rgba(199,154,66,0.14), transparent 35%),
+    linear-gradient(150deg, #fbf8f2 0%, #f4eee4 48%, #edf2ec 100%);
+}
+.bg-3d, .bg-aurora, .bg-sheen, .bg-veil, .pointer-light, .scroll-progress, .sparkle {
+  display: none !important;
+}
+.loader-gem {
+  animation: none;
+  box-shadow: 0 10px 24px rgba(154,112,33,0.18);
+  filter: none;
+}
+#view {
+  transform-style: flat;
+  transition: none;
+}
+[data-tilt] {
+  will-change: auto;
+  transform-style: flat;
+}
+.hero-title .line:last-child {
+  animation: none;
+  background-size: 100% 100%;
+}
+.btn::after,
+.btn-ripple,
+.feature-card::after,
+.service-img::after,
+.hero-figure::after,
+.split-figure::after,
+.buy-figure::after,
+.card-glow {
+  display: none !important;
+}
+.btn,
+.brand-mark,
+.nav,
+.nav-links a,
+.nav-links a::after,
+.nav-toggle span,
+.feature-card,
+.mini-service,
+.g-item,
+.contact-block,
+.feature-card img,
+.g-item img,
+.service-img img,
+.feature-card span::after,
+.g-caption,
+.reveal {
+  transition-duration: 0.18s !important;
+}
+.feature-card:hover,
+.mini-service:hover,
+.g-item:hover,
+.contact-block:hover,
+.btn:hover,
+.brand:hover .brand-mark,
+.service-list span:hover {
+  transform: none;
+}
+.feature-card:hover img,
+.g-item:hover img,
+.service-row:hover .service-img img {
+  transform: none;
+}
+.feature-card,
+.g-item,
+.service-img,
+.hero-figure img,
+.split-figure img,
+.buy-figure img,
+.note-panel,
+.testimonial-band,
+.education-band,
+.map-wrap {
+  box-shadow: 0 12px 28px rgba(25,36,32,0.12);
+}
+.feature-card:hover,
+.mini-service:hover,
+.g-item:hover,
+.contact-block:hover {
+  box-shadow: 0 14px 30px rgba(25,36,32,0.14);
+}
+.map-wrap iframe {
+  filter: none;
+}
+.featured, .service-preview, .education-band, .testimonial-band, .service-row, .gallery, .contact-grid, .map-wrap {
+  content-visibility: visible;
+  contain-intrinsic-size: auto;
+}
+.reveal {
+  transform: none;
+  transition-property: opacity;
+}
