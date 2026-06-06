@@ -2,6 +2,12 @@ import { pages, NOT_FOUND } from "./pages.js";
 
 const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+const isTouchDevice = !canHover;
+const supportsWebP = (() => {
+  const canvas = document.createElement("canvas");
+  if (!canvas.toDataURL) return false;
+  return canvas.toDataURL("image/webp").startsWith("data:image/webp");
+})();
 const view = document.getElementById("view");
 const nav = document.getElementById("nav");
 const navLinks = document.getElementById("navLinks");
@@ -28,6 +34,7 @@ const setActiveTab = (route) => {
 };
 
 function requestChromeUpdate() {
+  if (isTouchDevice && !nav.classList.contains("scrolled") && window.scrollY <= 46) return;
   if (scrollRaf) return;
   scrollRaf = requestAnimationFrame(() => {
     scrollRaf = 0;
@@ -35,6 +42,19 @@ function requestChromeUpdate() {
     const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     nav.classList.toggle("scrolled", y > 46);
     if (progressEl) progressEl.style.width = `${Math.min(100, (y / max) * 100)}%`;
+  });
+}
+
+function optimizeImages(root) {
+  root.querySelectorAll("img").forEach((img, index) => {
+    img.decoding = "async";
+    if (index > 0) img.loading = img.loading || "lazy";
+    if (supportsWebP && img.getAttribute("src")?.startsWith("assets/img/")) {
+      const jpgSrc = img.getAttribute("src");
+      img.src = jpgSrc.replace("assets/img/", "assets/img/webp/").replace(/\.(jpe?g)$/i, ".webp");
+    }
+    img.addEventListener("load", () => img.classList.add("is-loaded"), { once: true });
+    if (img.complete) img.classList.add("is-loaded");
   });
 }
 
@@ -174,10 +194,7 @@ function render(route) {
   const swap = () => {
     view.innerHTML = page.html;
     view.dataset.mood = page.mood || "home";
-    view.querySelectorAll("img").forEach((img) => {
-      img.decoding = "async";
-      img.addEventListener("load", () => img.classList.add("is-loaded"), { once: true });
-    });
+    optimizeImages(view);
 
     navLinks.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
@@ -189,7 +206,7 @@ function render(route) {
     requestChromeUpdate();
   };
 
-  if (isFirst || prefersReduced) {
+  if (isFirst || prefersReduced || isTouchDevice) {
     swap();
     isFirst = false;
     return;
